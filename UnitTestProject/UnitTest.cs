@@ -16,7 +16,7 @@ namespace UnitTestProject
 			{
 				HomeController controller = new HomeController();
 				ViewResult result = controller.About() as ViewResult;
-				Assert.AreEqual("Your application description page.", result.ViewData["Message"]);
+				Assert.AreEqual("Should faild test.", result.ViewData["Message"]);
 			}
 		}
 	}
