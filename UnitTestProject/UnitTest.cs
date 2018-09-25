@@ -18,6 +18,14 @@ namespace UnitTestProject
 				ViewResult result = controller.About() as ViewResult;
 				Assert.AreEqual("Your application description page.", result.ViewData["Message"]);
 			}
+
+			[TestMethod]
+			public void TestContactPage()
+			{
+				HomeController controller = new HomeController();
+				ViewResult result = controller.Contact() as ViewResult;
+				Assert.AreEqual("Your contact page.", result.ViewData["Message"]);
+			}
 		}
 	}
 }
