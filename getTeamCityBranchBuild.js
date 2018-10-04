@@ -6,7 +6,7 @@ var name = "Test"
 var value = "MyValue"
 console.log("##teamcity[setParameter name='env." + name + "' value='" + value + "']");
 console.log("##teamcity[setParameter name='env.MyParam' value='MyParamValue']");
-console.log("Write-Host " + "##teamcity[setParameter name='env.MyParam' value='2']"
+console.log("Write-Host " + "##teamcity[setParameter name='env.MyParam' value='2']");
 console.log("##teamcity[buildNumber 'test_value 1']");
 
 console.log("##teamcity[message text='Test -> "+ argv.Test +"' status='NORMAL']");
